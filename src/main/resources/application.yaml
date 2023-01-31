@@ -1,0 +1,10 @@
+db:
+  source: jdbc
+  connection:
+    url: jdbc:postgresql://localhost:5432/distribuidas
+    username: postgres
+    password: admin
+    poolName: hikariPool
+    initializationFailTimeout: -1
+    connectionTimeout: 2000
+

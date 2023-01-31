@@ -1,0 +1,9 @@
+api:
+  insecure: true
+  Dashboard: true
+providers:
+  file:
+    filename: "app01.yal"
+    watch: true
+http:
+    pollInterval: "5s"

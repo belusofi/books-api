@@ -1,0 +1,13 @@
+http:
+  routers:
+    router-app01:
+      entryPoints:
+        -http
+      service: app01
+      ##rule: Host('distribuida.com')
+  services:
+    app01:
+      load Balancer:
+        servers:
+          - url: 'http://127.0.0.1:7002'
+          - url: 'http://127.0.0.1:7003'
