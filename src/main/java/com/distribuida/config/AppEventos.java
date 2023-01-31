@@ -16,6 +16,7 @@ public class AppEventos {
         System.out.println("*****++migrando base de datos");
         var flyway = Flyway.configure()
                 .dataSource(dataSource)
+
                 .load();
         flyway.migrate();
     }
